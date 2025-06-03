@@ -1,11 +1,12 @@
 <?php
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db   = 'portfolio';
+$host = "alyalumombo.ct.ws";
+$user = "if0_39148856";
+$pass = "DifzA2AafV";
+$db   = "if0_39148856_alyalumombo";
 
-$conn = new mysqli($host, $user, $pass, $db);
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>
